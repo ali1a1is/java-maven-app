@@ -13,7 +13,7 @@ Technologies
 
 Setup Steps
 1. Connect to Server
-ssh <username>@192.168.1.124
+ssh ali-abdul-aleem@192.168.1.124
 
 2. Run Jenkins Container
 docker run -p 8080:8080 \
