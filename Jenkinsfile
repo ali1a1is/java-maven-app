@@ -41,7 +41,7 @@ pipeline {
                 }
                     steps {
                        script{
-                            buildImage 'docker push ali2678/dockerhub_repo_1:jmvn-3.0'
+                            buildImage 'ali2678/dockerhub_repo_1:jmvn-3.0'
                        }
 
                     }
