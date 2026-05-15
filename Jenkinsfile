@@ -1,3 +1,4 @@
+@library('jenkins_shared_lib')
 def gv
 pipeline {
     agent any
