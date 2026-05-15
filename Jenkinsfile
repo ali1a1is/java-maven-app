@@ -17,9 +17,10 @@ pipeline {
     
         stage("build jar") {
             when {
-                    expression {
-                        BRANCH_NAME == "master"
-                    }
+                     anyOf {
+                            branch 'master'
+                            branch 'jenkins_shared_lib'
+                        }
                 }
             steps {
                 script{
@@ -30,9 +31,10 @@ pipeline {
 
         stage("build docker image") {
             when {
-                    expression {
-                        BRANCH_NAME == "master"
-                    }
+                     anyOf {
+                            branch 'master'
+                            branch 'jenkins_shared_lib'
+                        }
                 }
                     steps {
                        script{
