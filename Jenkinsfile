@@ -23,7 +23,7 @@ pipeline {
                 }
             steps {
                 script{
-                    gv.buildJar()
+                    buildJar()
                 }
             }
         }
@@ -36,7 +36,7 @@ pipeline {
                 }
                     steps {
                        script{
-                        gv.buildImage()
+                            buildImage()
                        }
 
                     }
